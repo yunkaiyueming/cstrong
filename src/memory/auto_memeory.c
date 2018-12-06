@@ -15,6 +15,7 @@ int main() {
     } else {
         strcpy(description, "Zara ali a DPS student in class 10th");
     }
+
     printf("Name = %s\n", name);
     printf("Description: %s\n", description);
 }
