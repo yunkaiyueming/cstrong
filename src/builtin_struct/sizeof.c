@@ -10,11 +10,17 @@ int main() {
     printf("char:%lu \n",sizeof(char));
     printf("char[8]:%lu \n",sizeof(char[8]));
     printf("double:%lu \n",sizeof(double));
-    printf("double:%lu \n",sizeof(true));
     
+    struct people{
+        int age;
+        char* name;
+        float id;
+    };
+    printf("struct people:%lu \n",sizeof(struct people));
+    
+    struct people p1;
+    p1.name = "zhangsanzhangsanzhangsanzhangsanzhangsanzhangsan";
+    printf("struct var p1:%lu \n",sizeof(p1));
 
-    if(true){
-
-    }
     return 0;
 }
