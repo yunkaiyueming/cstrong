@@ -8,8 +8,13 @@ int main() {
     printf("float size %lu \n", sizeof(float));
     printf("max float size %lu \n", sizeof(FLT_MAX));
     printf("char:%lu \n",sizeof(char));
-    printf("char:%lu \n",sizeof(char[8]));
+    printf("char[8]:%lu \n",sizeof(char[8]));
     printf("double:%lu \n",sizeof(double));
-    //printf("double:%lu \n",sizeof(bool));
+    printf("double:%lu \n",sizeof(true));
+    
+
+    if(true){
+
+    }
     return 0;
 }

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
 
 int main() {
     char src[40];
@@ -11,5 +13,14 @@ int main() {
 
     printf("最终的目标字符串： %s\n", dest);
 
+    char s = 'a';
+    if(isalnum(s)>0){
+        printf("true");
+    }
+
+    abort();
+    exit(2);
+    printf("abort end");
+    
     return (0);
 }
