@@ -10,3 +10,9 @@ extern float div(int,int);
 
 #endif
 
+
+//int x =10;
+//int y = 5;
+
+int a1 = 20;
+int b1 = 30;

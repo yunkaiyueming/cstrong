@@ -7,8 +7,7 @@
 #define false 0
 
 //定义一个新的数据类型,并没有分配内存空间
-struct Array
-{
+struct Array{
     int *pBase; //定义一个指向数组的指针
     int len;    //数组中能够存放的最大元素个数
     int cnt;    //当前数组中元素的个数

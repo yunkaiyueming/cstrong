@@ -1,4 +1,5 @@
 #include <stdio.h>
+// #include <pthread.h>
 
 // 变量声明
 extern int a1, b1;
@@ -8,17 +9,19 @@ extern float f1;
 void echo_var();
 void add();
 
-void main() {
+int main() {
     //type variable_list;
     int i, j, k;
     char c, ch;
     float f, salary;
     double d;
+    size_t e;
 
     printf("%d,%d,%d \n", i, j, k);
-    printf("%d,%d,%d \n", c, ch);
+    printf("%d,%d\n", c, ch);
     printf("%f,%f \n", f, salary);
-    printf("%d \n", d);
+    printf("%f \n", d);
+    printf("e=%zu \n", e);
 
     echo_var();
     add();

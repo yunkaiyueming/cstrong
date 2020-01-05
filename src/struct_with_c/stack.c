@@ -21,6 +21,7 @@ typedef struct stack
     PNODE pTop;    //栈顶指针
     PNODE pBottom; //栈底指针
 } STACK, *PSTACK;
+
 //函数声明区
 void Create_Stack(PSTACK S);
 void Push_Stack(PSTACK S, int val);
@@ -54,6 +55,7 @@ void Push_Stack(PSTACK S, int val)
     }
     p->data = val;
     p->pNext = S->pTop; //让p的指针域指向上一个节点
+
     S->pTop = p;        //让pTop指针指向栈顶元素
 }
 
@@ -86,6 +88,8 @@ bool Pop_Stack(PSTACK S, int *val)
     {
         PNODE p = S->pTop;
         *val = S->pTop->data;
+
+        
         S->pTop = S->pTop->pNext; //使pTop指针指向栈顶元素；
 
         free(p);  //释放p指针所指向的那个节点的内存；

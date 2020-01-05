@@ -11,6 +11,14 @@ typedef struct Node
     struct Node *pNext; //定义一个结构体指针，指向下一次个与当前节点数据类型相同的节点
 } NODE, *PNODE;         //NODE等价于 struct Node; PNODE等价于struct Node *； 此处用大写是为了与变量区分，可以让人容易变出是个数据类型
 
+struct list
+{
+    PNODE Head;
+    PNODE Tail;
+    int lenth;
+};
+
+
 PNODE Create_List(void)
 {
     int len; //存放链表的长度

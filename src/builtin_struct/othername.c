@@ -7,8 +7,22 @@ typedef struct stu{
 } STU;
 
 
+//typedef type othername;
+typedef struct book{
+    int id;
+    char bookname[20];
+    char booknum;
+}book_t;
+
 struct stu body1, body2;
 STU body1,body2;
+
+struct book book1,book2;
+book_t book3,book4;
+
+#define TRUE  1//使用define定义数
+#define book_d struct book //使用define定义类型 别名 define ohtername value
+book_d book5,book6;
 
 void main(){
     struct stu s1;
